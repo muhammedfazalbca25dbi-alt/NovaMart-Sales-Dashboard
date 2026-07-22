@@ -22,7 +22,7 @@ st.caption("Version 4 | Muhammed Fazal")
 @st.cache_data
 def load_data():
 
-    nova_mart = pd.read_csv(r"C:\Users\muham\OneDrive\Documents\Project2_NovaMart_Streamlit\Project2_NovaMart_Streamlit\data\novamart_clean.csv") 
+    nova_mart = pd.read_csv(csv_path) 
 
     rename_columns = {
         "region_y": "region",
