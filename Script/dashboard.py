@@ -3,6 +3,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+csv_path = BASE_DIR / "data" / "novamart_clean.csv"
+
+nova_mart = pd.read_csv(csv_path)
+
 st.set_page_config(
     page_title="NovaMart Dashboard",
     page_icon="📊",
